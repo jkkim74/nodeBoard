@@ -86,7 +86,8 @@ app.get('/', function(req, res){
 });
 
 app.get('/restricted', restrict, function(req, res){
-  res.send('Wahoo! restricted area, click to <a href="/logout">logout</a>');
+  //res.send('Wahoo! restricted area, click to <a href="/logout">logout</a>');
+    res.render('main');
 });
 
 app.get('/logout', function(req, res){
